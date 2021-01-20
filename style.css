@@ -1,0 +1,147 @@
+body {
+  margin: 0px;
+  border: 0px;
+  background-color: darkgray;
+  font-family: "Catamaran", sans-serif;
+}
+
+#sidenav {
+  background-color: black;
+  color: cadetblue;
+  position: fixed;
+  top: 0px;
+  right: -150px;
+  width: 150px;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  list-style: none;
+}
+
+#sidenav.click {
+  right: 0px;
+}
+
+.navcontent {
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+  margin-top: 60px;
+  font-size: 20px;
+  width: 100%;
+}
+
+.navcontent li {
+  line-height: 100px;
+}
+
+.navcontent li a {
+  color: cadetblue;
+}
+
+.navcontent li a:hover {
+  color: white;
+  font-size: 25px;
+}
+
+/* .navcontent li a: {
+  color: white;
+} */
+
+.socialcontent {
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+  font-size: 12px;
+  display: none;
+}
+
+.socialcontent.open {
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+  font-size: 12px;
+  display: block;
+}
+
+.socialcontent li {
+  line-height: 50px;
+}
+
+.socialcontent li a:hover {
+  color: white;
+  font-size: 16px;
+}
+
+.socialcontent li a i {
+  padding-right: 3px;
+}
+
+#topnav {
+  background-color: darkslategray;
+  height: 50px;
+  display: flex;
+}
+
+.hambtn {
+  position: absolute;
+  display: flex;
+  right: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 45px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.hambtn.click {
+  right: 160px;
+}
+
+.hambtn-dash {
+  width: 33px;
+  height: 4px;
+  background: black;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.hambtn-dash::before,
+.hambtn-dash::after {
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 4px;
+  background: black;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.hambtn-dash::before {
+  transform: translateY(-10px);
+}
+
+.hambtn-dash::after {
+  transform: translateY(10px);
+}
+
+.hambtn-dash.change {
+  transform: translate(-50px);
+  background: transparent;
+}
+
+.hambtn-dash.change::before {
+  transform: rotate(45deg) translate(40px, -40px);
+}
+.hambtn-dash.change::after {
+  transform: rotate(-45deg) translate(40px, 40px);
+}
+
+#topnav a {
+  color: black;
+  font-size: 30px;
+}
+
+.logo {
+  margin-left: 20px;
+}
