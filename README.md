@@ -1,2 +1,2 @@
 # Basic-Side-Navbar
-Just a normal side right side navigation bar 
+Just a normal right side navigation bar 
